@@ -1,4 +1,7 @@
 ---
-create_user: sammy
-copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
-sys_packages: [ 'curl', 'vim', 'git', 'ufw']
+create_user: kigamba
+copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/ssh_play_digital_ocean_rsa.pub') }}"
+sys_packages: [ 'curl', 'vim', 'git', 'ufw', 'tmux']
+usernames:
+  - kigamba
+  - root
