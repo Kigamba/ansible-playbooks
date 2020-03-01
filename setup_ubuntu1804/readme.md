@@ -41,4 +41,10 @@ sys_packages: [ 'curl', 'vim', 'git', 'ufw']
 ansible-playbook -l [target] -i [inventory file] -u [remote user] playbook.yml
 ```
 
+eg.
+
+```
+ansible-playbook --private-key=~/gcp_golang_futball_analyser -u kigamba -i inventory playbook.yml
+```
+
 For more information on how to run this Ansible setup, please check this guide: [Initial Server Setup Guide for Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-automate-initial-server-setup-on-ubuntu-18-04).
